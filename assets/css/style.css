@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("../images/morocco.png");
+    color: slategray;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    border: solid;
+    border-color: lightblue;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+#instructionBox {
+    margin: 20px;
+    text-align: justify;
+}
+
+#scoringBox {
+    margin: 40px;
+}
