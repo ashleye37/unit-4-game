@@ -25,3 +25,13 @@ h1 {
 #scoringBox {
     margin: 40px;
 }
+
+button {
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.image {
+    height: 200px;
+    width: 100%;
+}

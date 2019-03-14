@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 
     <title>Crystals Collector Game!</title>
@@ -21,15 +22,15 @@
 
         <div class="row" id="instructionBox">
                 <div class="col-md-12">
-                    <h2>Instructions:</h2>
+                    <h3>Instructions:</h2>
                 </div>
 
                 <div class="col-md-12">
                     <ol>
-                        <h4><li>You will be given a random number at the start of the game.</li></h4>
-                        <h4><li>There are 4 crystals shown below. Each crystal click will add an different amount of points to your total score.</h4></li>
-                        <h4><li>Win the game by matching your score to the random number. You lose if your score goes over the random number.</li></h4>
-                        <h4><li>The value of each crystal is hidden until clicked and will change value each time the game restarts.</li></h4>
+                        <h5><li>You will be given a random number at the start of the game.</li></h4>
+                        <h5><li>There are 4 crystals shown below. Each crystal click will add an different amount of points to your total score.</h4></li>
+                        <h5><li>Win the game by matching your score to the random number. You lose if your score goes over the random number.</li></h4>
+                        <h5><li>The value of each crystal is hidden until clicked and will change value each time the game restarts.</li></h4>
                     </ol>
                 </div>
         </div>
@@ -37,7 +38,7 @@
         <div class="row" id="scoringBox">
             <div class="col-md-4">
                 <h5><div>Random Number:</div></h5>
-                <h6><div id="displayRndNum"></div></h6>
+                <h6><span id="displayRndNum"></span></h6>
             </div>
 
             <div class="col-md-4">
@@ -53,19 +54,19 @@
 
         <div class="row">
             <div class="col-md-3">
-                <img src="assets/images/purpleCrystal.jpg">
+                <button class="btn btn-light" ><img class="image" src="assets/images/purpleCrystal.jpg"></button>
             </div>
 
             <div class="col-md-3">
-                <img src="assets/images/greenCrystal.jpeg">
+                <button class="btn btn-light"><img class="image"src="assets/images/greenCrystal.jpeg"></button>
             </div>
 
             <div class="col-md-3">
-                <img src="assets/images/diamondCrystal.jpg">
+                <button class="btn btn-light"><img class="image" src="assets/images/diamondCrystal.jpg"></button>
             </div>
 
             <div class="col-md-3">
-                <img src="assets/images/blueCrystal.jpeg">
+                <button class="btn btn-light"><img class="image" src="assets/images/blueCrystal.jpeg"></button>
             </div>
         </div>
     </div>
