@@ -1,6 +1,6 @@
 $(document).ready (function() { 
-    console.log("ready");
-    //Generate a random number and assigns random values to crystals when the page loads. Also, autoset wins/losses to 0.
+    
+    //All global variables to be used for game.
         var userTotal= 0;
         var wins = 0;
         var losses = 0;
@@ -14,9 +14,11 @@ $(document).ready (function() {
         var crystalMin = 1;
         var crystalMax = 12;
     
+    //Functions running for crystal game.
         setUpGame();
         playCrystals();
-
+    
+    //Function that will set up all the randomly generated numbers for the game.
     function setUpGame() {
         randomNumber= Math.floor(Math.random() * (max - min) + min);
         $("#displayRndNum").text(randomNumber);
@@ -30,6 +32,7 @@ $(document).ready (function() {
         $("#displayLosses").text(losses);
     };
 
+    //Function that will add random crystal value to player's score and display a custom alert of the crystal point value.
     function playCrystals() {
         $("#purple-crystal").on("click", function() {
             $(".alert-dark").hide();
@@ -72,6 +75,7 @@ $(document).ready (function() {
         });
     };
 
+    //Function that runs to check for a win as the player uses the game.
     function checkForWin() {
         if (userTotal === randomNumber) {
             $(".alert-dark").hide();
@@ -85,7 +89,7 @@ $(document).ready (function() {
         };
     };
     
-
+    //Function that runs to check for a loss as the player uses the game.
     function checkForLoss() {
         if (userTotal > randomNumber) {
             $(".alert-dark").hide();
@@ -98,7 +102,7 @@ $(document).ready (function() {
             });
         };
     };
-
+    //Function that will reset the game so that the player can play again without having to refresh the page and will continue to keep track of their wins and losses.
     function reset() {
         setUpGame();
         userTotal = 0;
