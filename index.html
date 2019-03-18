@@ -8,14 +8,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <title>Crystals Collector Game!</title>
 </head>
 <body>
 
     <div class="container">
+            <div class="alert alert-dark collapse" id="crystalAlert" role="alert"></div>
+
+            <div class="alert alert-primary alert-dismissible collapse" id="winAlert" role="alert">
+                <h5 class="alert-heading">You Win!</h5>
+                <p> Dismiss this alert to play again!</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+    
+            <div class="alert alert-secondary alert-dismissible collapse" id="lossAlert" role="alert">
+                    <h5 class="alert-heading">You Lose!</h5>
+                    <p>You went over the random number! Dismiss this alert to play again!</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+
         <header>
             <h1>Welcome to Crystal Collector!</h1>
         </header>
@@ -38,7 +55,7 @@
         <div class="row" id="scoringBox">
             <div class="col-md-4">
                 <h5><div>Random Number:</div></h5>
-                <h6><span id="displayRndNum"></span></h6>
+                <h6><div id="displayRndNum"></div></h6>
             </div>
 
             <div class="col-md-4">
@@ -47,29 +64,29 @@
             </div>
 
             <div class="col-md-4">
-                <h5><div>Wins:</div></h5> <h6><div id="dislayWin"></div></h6>
+                <h5><div>Wins:</div></h5> <h6><div id="displayWin"></div></h6>
                 <h5><div>Losses:</div></h5> <h6><div id="displayLosses"></div></h6>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-3">
-                <button class="btn btn-light" ><img class="image" src="assets/images/purpleCrystal.jpg"></button>
+                <button class="btn btn-light" ><img class="image" id="purple-crystal" src="assets/images/purpleCrystal.jpg"></button>
             </div>
 
             <div class="col-md-3">
-                <button class="btn btn-light"><img class="image"src="assets/images/greenCrystal.jpeg"></button>
+                <button class="btn btn-light"><img class="image" id="green-crystal" src="assets/images/greenCrystal.jpeg"></button>
             </div>
 
             <div class="col-md-3">
-                <button class="btn btn-light"><img class="image" src="assets/images/diamondCrystal.jpg"></button>
+                <button class="btn btn-light"><img class="image" id="diamond-crystal" src="assets/images/diamondCrystal.jpg"></button>
             </div>
 
             <div class="col-md-3">
-                <button class="btn btn-light"><img class="image" src="assets/images/blueCrystal.jpeg"></button>
+                <button class="btn btn-light"><img class="image" id="blue-crystal" src="assets/images/blueCrystal.jpeg"></button>
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

@@ -35,3 +35,17 @@ button {
     height: 200px;
     width: 100%;
 }
+
+#crystalAlert {
+    text-align: center;
+    margin-top: 20px;
+}
+#winAlert {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#lossAlert {
+    text-align: center;
+    margin-top: 20px;
+}
